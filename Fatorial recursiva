@@ -1,0 +1,31 @@
+#include<stdio.h>
+int fatorialrec(int num)
+{
+  if (num == 0) {
+    return 1;
+  }
+  else {
+    return num * fatorialrec(num-1);
+  }
+}
+int fatorialsemrec(int num)
+{
+  int f, i;
+  if (num == 0) {
+    return 1;
+  }
+  else {
+   f = 1;
+   for(i= num; i > 1; i--){
+     f = f * i;
+   }     
+    return f; 
+  }
+}
+int main() {
+  int num;
+  num = 5;
+  printf("\nfatR(%d) = %d", num, fatorialrec(num));
+  printf("\n\nfatS(%d) = %d", num, fatorialsemrec(num));
+
+}
