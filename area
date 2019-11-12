@@ -1,0 +1,9 @@
+#include <stdio.h>
+int area(float b, float h){
+  int resultado = b*h;
+  return resultado;
+}
+int main (){
+  printf("%d", area(10, 4));
+  return 0;
+}
