@@ -1,0 +1,16 @@
+#include <stdio.h>
+void ehbisexto(void){
+  int i;
+  printf("Informe o valor:");
+  scanf("%d", &i);
+  if ((i%4 == 0 && i%100 != 0) || i%400 == 0)
+
+{
+printf("É bissexto.");
+}
+else printf("Não é bissexto");
+}
+int main() {
+  ehbisexto();
+  return 0;
+}
