@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+struct endereco { 
+    char rua[201];
+    int numero;
+    char cep[11]; 
+    char bairro[33]; 
+    char cidade[151]; 
+    char estado[151]; 
+    char país[120]; 
+    char complemento [150];
+    };
+    typedef struct endereco End;
+
+struct aluno {
+  char primeiroNome[15];
+  char sobrenome[15];
+  End enderecoResidencia; 
+};
+typedef struct aluno Al;
+int main(void) {
+ End e;
+ Al  a;
+scanf("%s", &a.primeiroNome); 
+printf("%s", a.primeiroNome);
+scanf("%d", &e.numero); 
+printf("%d", e.numero);
+return 0;
+}
